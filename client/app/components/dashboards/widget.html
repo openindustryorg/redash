@@ -48,7 +48,7 @@
             <query-link query="$ctrl.widget.getQuery()" visualization="$ctrl.widget.visualization"
               readonly="!$ctrl.canViewQuery"></query-link>
           </p>
-          <div class="text-muted query--description" ng-bind-html="$ctrl.widget.getQuery().description | markdown">
+          <div class=" query--description" ng-bind-html="$ctrl.widget.getQuery().description | markdown">
           </div>
         </div>
       </div>
@@ -136,3 +136,23 @@
     <div class="body-row-auto scrollbox tiled t-body p-15 markdown" ng-bind-html="$ctrl.widget.text | markdown"></div>
   </div>
 </div>
+
+<style>
+  .tile {
+    background-color: #262626;
+  }
+
+  .tile .t-header .th-title a.query-link {
+    color: #fff !important;
+  }
+
+  visualization-name {
+    color: #fff !important;
+  }
+
+  .modebar {
+    background-color: #262626;
+    background-color: #4f4f4f !important;
+    border-radius: 3px;
+  }
+</style>

@@ -18,6 +18,10 @@ export default function applyLayoutFixes(plotlyElement, layout, updatePlot) {
   // update layout size to plot container
   layout.width = Math.floor(plotlyElement.offsetWidth);
   layout.height = Math.floor(plotlyElement.offsetHeight);
+  layout.plot_bgcolor = 'rgb(38,38,38,0)';
+  layout.paper_bgcolor = 'rgb(38,38,38,0)';
+  layout.xaxis.color = 'rgb(255,255,255,0)';
+  layout.yaxis.color = 'rgb(255,255,255,0)';
 
   const transformName = find([
     'transform',
