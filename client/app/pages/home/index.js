@@ -34,7 +34,7 @@ export default function init(ngModule) {
   return {
     '/': {
       template: '<home-page></home-page>',
-      title: 'Redash',
+      title: 'Open Industry - Insights',
     },
   };
 }

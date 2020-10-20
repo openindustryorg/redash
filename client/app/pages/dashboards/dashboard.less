@@ -38,7 +38,7 @@
 
   &.editing-mode {
     /* Y axis lines */
-    background: linear-gradient(to right, transparent, transparent 1px, #F6F8F9 1px, #F6F8F9), linear-gradient(to bottom, #B3BABF, #B3BABF 1px, transparent 1px, transparent);
+    background: linear-gradient(to right, transparent, transparent 1px, #1a1a1a 1px, #1a1a1a), linear-gradient(to bottom, #B3BABF, #B3BABF 1px, transparent 1px, transparent);
     background-size: 5px 50px;
     background-position-y: -8px;
 
@@ -50,7 +50,7 @@
       left: 0;
       bottom: 85px;
       right: 15px;
-      background: linear-gradient(to bottom, transparent, transparent 2px, #F6F8F9 2px, #F6F8F9 5px), linear-gradient(to left, #B3BABF, #B3BABF 1px, transparent 1px, transparent);
+      background: linear-gradient(to bottom, transparent, transparent 2px, #1a1a1a 2px, #1a1a1a 5px), linear-gradient(to left, #B3BABF, #B3BABF 1px, transparent 1px, transparent);
       background-size: calc((100vw - 15px) / 6) 5px;
       background-position: -7px 1px;
     }
@@ -125,7 +125,8 @@
 .dashboard-header {
   position: -webkit-sticky;  // required for Safari
   position: sticky;
-  background: #f6f7f9;
+    background-color: #1a1a1a;
+    color: #fff;
   z-index: 99;
   width: 100%;
   top: 0;
@@ -133,6 +134,7 @@
 
 .dashboard-header, .page-header--query {
   .tags-control a {
+    color: #fff;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
   }
@@ -168,6 +170,14 @@
       color: #F44336;
     }
   }
+}
+
+button#split-button {
+    color: #fff;
+}
+
+button.btn.btn-sm.hidden-xs.btn-default {
+    color: #fff;
 }
 
 @keyframes saving {

@@ -47,7 +47,13 @@ tags-list {
 }
 
 .list-group-item {
+  background-color: #262626;
+  color: #fff;
+  border-color: #000;
+
  &.active {
+   border-color: #1b1b1b;
+
    button {
      color: white;
    }
@@ -58,18 +64,27 @@ tags-list {
   }
 
   &.active, &.active:hover, &.active:focus {
-    background-color: #fff;
+    background-color: #262626;
+     border-color: #1b1b1b;
+    color: #fff;
     box-shadow: inset 3px 0px 0px @brand-primary;
   }
+
+}
+
+a.list-group-item:hover, button.list-group-item:hover, a.list-group-item:focus, button.list-group-item:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #262626;
 }
 
 .list-group-item-heading {
     margin-bottom: 2px;
-    color: #333;
+    color: #fff;
 
     & > small {
         font-size: 11px;
-        color: #C5C5C5;
+        color: #fff;
         margin-left: 10px;
     }
 }
@@ -99,11 +114,11 @@ tags-list {
 
 .list-group-item.inactive,
 .ui-select-choices-row.disabled {
-  background-color: #eee !important;
+  background-color: #262626 !important;
   border-color: transparent;
   opacity: 0.5;
   box-shadow: none;
-  color: #333;
+  color: #fff;
   pointer-events: none;
   cursor: not-allowed;
 }

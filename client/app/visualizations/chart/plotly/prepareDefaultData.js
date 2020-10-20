@@ -1,6 +1,7 @@
 import { isNil, each, includes, isString, map, sortBy } from 'lodash';
-import { cleanNumber, normalizeValue, getSeriesAxis } from './utils';
 import { ColorPaletteArray } from '@/visualizations/ColorPalette';
+import { cleanNumber, normalizeValue, getSeriesAxis } from './utils';
+
 
 function getSeriesColor(seriesOptions, seriesIndex) {
   return seriesOptions.color || ColorPaletteArray[seriesIndex % ColorPaletteArray.length];

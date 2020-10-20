@@ -12,7 +12,7 @@ import 'brace/mode/json';
 import 'brace/mode/python';
 import 'brace/mode/sql';
 import 'brace/mode/yaml';
-import 'brace/theme/textmate';
+import 'brace/theme/twilight';
 import 'brace/ext/searchbox';
 
 import { Query } from '@/services/query';
@@ -235,7 +235,7 @@ class QueryEditor extends React.Component {
           <div data-executing={this.props.queryExecuting} style={{ height: 'calc(100% - 40px)', marginBottom: '0px' }} className="editor__container">
             <AceEditor
               ref={this.refEditor}
-              theme="textmate"
+              theme="twilight"
               mode={this.props.dataSource.syntax || 'sql'}
               value={this.state.queryText}
               editorProps={{ $blockScrolling: Infinity }}

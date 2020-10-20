@@ -88,7 +88,9 @@
   -webkit-appearance: none;
   margin: 0;
 }
-
+.ant-input{
+      background-color: #262626;
+}
 // Pagination overrides (based on existing Bootstrap overrides)
 .@{pagination-prefix-cls} {
   display: inline-block;
@@ -226,11 +228,11 @@
   &-item {
     // custom rule
     &.selected {
-      background-color: #F6F8F9;
+      background-color: #1a1a1a;
     }
 
     &.disabled {
-      background-color: fade(#F6F8F9, 40%);
+      background-color: fade(#1a1a1a, 40%);
 
       & > * {
         opacity: 0.4;
