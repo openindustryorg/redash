@@ -26,10 +26,11 @@ function DynamicButton({ options, selectedDynamicValue, onSelect, enabled }) {
           )}
         </Menu.Item>
       ))}
-      {enabled && <Menu.Divider />}
+      {enabled && <Menu.Divider/>}
       {enabled && (
         <Menu.Item>
-          <Icon type="arrow-left" /><Text >Back to Static Value</Text>
+          <Icon type="arrow-left"/>
+          <Text>Back to Static Value</Text>
         </Menu.Item>
       )}
     </Menu>
